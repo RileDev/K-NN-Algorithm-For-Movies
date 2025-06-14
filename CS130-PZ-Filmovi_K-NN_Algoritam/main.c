@@ -48,7 +48,7 @@ void user_pref_to_vector(const UserPref pref, float* vec, int vec_size,
 
 float distance(const float* v1, const float* v2, int n);
 
-int cmp(void* a, void* b);
+int cmp(const void* a, const void* b);
 
 int main() {
     Movie *movies = NULL;
@@ -98,16 +98,16 @@ int main() {
     float movie_vector[N_GENRES + 3];
     MovieDistance* m_distance = malloc(n_movies * sizeof(MovieDistance));
     for (int i = 0; i < n_movies; i++) {
-        film_to_vector(&movies[i], movie_vector, N_GENRES + 3, genres_list, N_GENRES, MIN_YEAR, MAX_YEAR, userPrefs.director);
+        movie_to_vector(&movies[i], movie_vector, N_GENRES + 3, genres_list, N_GENRES, MIN_YEAR, MAX_YEAR, userPrefs.director);
         m_distance[i].index = i;
         m_distance[i].dist = distance(user_vector, movie_vector, N_GENRES + 3);
     }
     
     qsort(m_distance, n_movies, sizeof(MovieDistance), cmp);
 
-    for (int i = 1; i <= 5 && i < n_movies; i++) {
+    for (int i = 0; i < 5 && i < n_movies; i++) {
         int index = m_distance[i].index;
-        printf("%d. %s (%d) - Rating %.1f, Genres: %s, Director: %s\n", i, movies[index].title, movies[index].year, movies[index].rating, movies[index].genre, movies[index].director);
+        printf("%d. %s (%d) - Rating %.1f, Genres: %s, Director: %s\n", i + 1, movies[index].title, movies[index].year, movies[index].rating, movies[index].genre, movies[index].director);
     }
 
     free(movies);
@@ -247,7 +247,7 @@ float distance(const float* v1, const float* v2, int n) {
     return sqrt(sum);
 }
 
-int cmp(void* a, void* b) {
+int cmp(const void* a, const void* b) {
     float d = ((MovieDistance*)a)->dist - ((MovieDistance*)b)->dist;
     return (d > 0) - (d < 0);
 }
