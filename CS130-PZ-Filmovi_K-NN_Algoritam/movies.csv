@@ -1,4 +1,251 @@
 title,year,rating,genre,director,actors
 The Shawshank Redemption,1994,9.3,Drama,Frank Darabont,Tim Robbins|Morgan Freeman
 The Godfather,1972,9.2,Crime|Drama,Francis Ford Coppola,Marlon Brando|Al Pacino
-The Dark Knight,2008,9.0,Action|Crime|Drama,Christopher Nolan,Christian Bale|Heath Ledger
+The Godfather: Part II,1974,9.0,Crime|Drama,Francis Ford Coppola,Al Pacino|Robert De Niro
+The Dark Knight,2008,9.0,Action|Crime|Drama|Thriller,Christopher Nolan,Christian Bale|Heath Ledger
+12 Angry Men,1957,8.9,Drama,Sidney Lumet,Henry Fonda|Lee J. Cobb
+Schindler's List,1993,8.9,Biography|Drama|History,Steven Spielberg,N/A
+The Lord of the Rings: The Return of the King,2003,8.9,Action|Adventure|Drama|Fantasy,Peter Jackson,N/A
+Pulp Fiction,1994,8.9,Crime|Drama,Quentin Tarantino,N/A
+"Il buono, il brutto, il cattivo",1966,8.9,Western,Sergio Leone,N/A
+Fight Club,1999,8.8,Drama,David Fincher,N/A
+The Lord of the Rings: The Fellowship of the Ring,2001,8.8,Adventure|Drama|Fantasy,Peter Jackson,N/A
+Forrest Gump,1994,8.8,Drama|Romance,Robert Zemeckis,N/A
+Star Wars: Episode V - The Empire Strikes Back,1980,8.8,Action|Adventure|Fantasy,Irvin Kershner,N/A
+Inception,2010,8.8,Action|Adventure|Thriller,Christopher Nolan,N/A
+The Lord of the Rings: The Two Towers,2002,8.7,Adventure|Drama|Fantasy,Peter Jackson,N/A
+One Flew Over the Cuckoo's Nest,1975,8.7,Drama,Milos Forman,N/A
+Goodfellas,1990,8.7,Crime|Drama,Martin Scorsese,N/A
+The Matrix,1999,8.7,Action,Lana Wachowski,N/A
+Shichinin no samurai,1954,8.7,Adventure|Drama,Akira Kurosawa,N/A
+Cidade de Deus,2002,8.6,Crime|Drama,Fernando Meirelles,N/A
+Se7en,1995,8.6,Crime|Drama|Mystery|Thriller,David Fincher,N/A
+Star Wars,1977,8.6,Action|Adventure|Fantasy,George Lucas,N/A
+The Silence of the Lambs,1991,8.6,Crime|Drama|Thriller,Jonathan Demme,N/A
+It's a Wonderful Life,1946,8.6,Drama|Family|Fantasy,Frank Capra,N/A
+La vita è bella,1997,8.6,Comedy|Drama|Romance|War,Roberto Benigni,N/A
+The Usual Suspects,1995,8.6,Crime|Mystery|Thriller,Bryan Singer,N/A
+Sen to Chihiro no kamikakushi,2001,8.6,Adventure|Animation|Family|Fantasy|Mystery,Hayao Miyazaki,N/A
+Saving Private Ryan,1998,8.6,Drama|War,Steven Spielberg,N/A
+Léon,1994,8.6,Crime|Drama|Thriller,Luc Besson,N/A
+Spider-Man: Into the Spider-Verse,2018,8.7,Action|Adventure|Animation|Comedy|Family,Bob Persichetti,N/A
+The Green Mile,1999,8.5,Crime|Drama|Fantasy|Mystery,Frank Darabont,N/A
+Interstellar,2014,8.6,Adventure|Drama,Christopher Nolan,N/A
+Psycho,1960,8.5,Horror|Mystery|Thriller,Alfred Hitchcock,N/A
+American History X,1998,8.5,Drama,Tony Kaye,N/A
+City Lights,1931,8.5,Comedy|Drama|Romance,Charles Chaplin,N/A
+C'era una volta il West,1968,8.5,Western,Sergio Leone,N/A
+Casablanca,1942,8.5,Drama|Romance|War,Michael Curtiz,N/A
+Modern Times,1936,8.5,Comedy|Drama|Family|Romance,Charles Chaplin,N/A
+The Pianist,2002,8.5,Biography|Drama|Music|War,Roman Polanski,N/A
+Intouchables,2011,8.5,Biography|Comedy|Drama,Olivier Nakache,N/A
+The Departed,2006,8.5,Crime|Drama|Thriller,Martin Scorsese,N/A
+Terminator 2: Judgment Day,1991,8.5,Action,James Cameron,N/A
+Back to the Future,1985,8.5,Adventure|Comedy,Robert Zemeckis,N/A
+Whiplash,2014,8.5,Drama|Music,Damien Chazelle,N/A
+Rear Window,1954,8.5,Mystery|Thriller,Alfred Hitchcock,N/A
+Raiders of the Lost Ark,1981,8.5,Action|Adventure,Steven Spielberg,N/A
+The Lion King ,1994,8.5,Adventure|Animation|Drama|Family|Musical,Roger Allers,N/A
+Gladiator,2000,8.5,Action|Adventure|Drama,Ridley Scott,N/A
+The Prestige,2006,8.5,Drama|Mystery|Thriller,Christopher Nolan,N/A
+Apocalypse Now,1979,8.5,Drama|War,Francis Ford Coppola,N/A
+Memento,2000,8.5,Mystery|Thriller,Christopher Nolan,N/A
+Alien,1979,8.5,Horror,Ridley Scott,N/A
+The Great Dictator,1940,8.5,Comedy|Drama|War,Charles Chaplin,N/A
+Nuovo Cinema Paradiso,1988,8.5,Drama,Giuseppe Tornatore,N/A
+Hotaru no haka,1988,8.5,Animation|Drama|War,Isao Takahata,N/A
+Avengers: Infinity War,2018,8.5,Action|Adventure|Fantasy,Anthony Russo,N/A
+Sunset Blvd.,1950,8.4,Drama,Billy Wilder,N/A
+Das Leben der Anderen,2006,8.4,Drama|Thriller,Florian Henckel von Donnersmarck,N/A
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,1964,8.4,Comedy,Stanley Kubrick,N/A
+Paths of Glory,1957,8.4,Drama|War,Stanley Kubrick,N/A
+The Shining,1980,8.4,Drama|Horror,Stanley Kubrick,N/A
+Django Unchained,2012,8.4,Drama|Western,Quentin Tarantino,N/A
+WALL·E,2008,8.4,Adventure|Animation|Family,Andrew Stanton,N/A
+Mononoke-hime,1997,8.4,Adventure|Animation|Fantasy,Hayao Miyazaki,N/A
+Witness for the Prosecution,1957,8.4,Crime|Drama|Mystery|Thriller,Billy Wilder,N/A
+American Beauty,1999,8.4,Drama,Sam Mendes,N/A
+The Dark Knight Rises,2012,8.4,Action|Thriller,Christopher Nolan,N/A
+Oldeuboi,2003,8.4,Action|Drama|Mystery|Thriller,Chan-wook Park,N/A
+Aliens,1986,8.4,Action|Adventure|Thriller,James Cameron,N/A
+Once Upon a Time in America,1984,8.4,Crime|Drama,Sergio Leone,N/A
+Coco,2017,8.4,Adventure|Animation|Comedy|Family|Fantasy|Music|Mystery,Lee Unkrich,N/A
+Das Boot,1981,8.4,Adventure|Drama|Thriller|War,Wolfgang Petersen,N/A
+Citizen Kane,1941,8.4,Drama|Mystery,Orson Welles,N/A
+Braveheart,1995,8.4,Biography|Drama|History|War,Mel Gibson,N/A
+Vertigo,1958,8.3,Mystery|Romance|Thriller,Alfred Hitchcock,N/A
+North by Northwest,1959,8.3,Adventure|Mystery|Thriller,Alfred Hitchcock,N/A
+Reservoir Dogs,1992,8.3,Crime|Drama|Thriller,Quentin Tarantino,N/A
+Star Wars: Episode VI - Return of the Jedi,1983,8.3,Action|Adventure|Fantasy,Richard Marquand,N/A
+M - Eine Stadt sucht einen Mörder,1931,8.3,Crime|Mystery|Thriller,Fritz Lang,N/A
+Kimi no na wa.,2016,8.4,Animation|Drama|Fantasy|Romance,Makoto Shinkai,N/A
+Amadeus,1984,8.3,Biography|Drama|History|Music,Milos Forman,N/A
+Requiem for a Dream,2000,8.3,Drama,Darren Aronofsky,N/A
+Dangal,2016,8.5,Action|Biography|Drama|Sport,Nitesh Tiwari,N/A
+Taare Zameen Par,2007,8.4,Drama|Family,Aamir Khan,N/A
+Lawrence of Arabia,1962,8.3,Adventure|Biography|Drama|History|War,David Lean,N/A
+Eternal Sunshine of the Spotless Mind,2004,8.3,Drama|Romance,Michel Gondry,N/A
+A Clockwork Orange,1971,8.3,Crime|Drama,Stanley Kubrick,N/A
+3 Idiots,2009,8.4,Comedy|Drama,Rajkumar Hirani,N/A
+2001: A Space Odyssey,1968,8.3,Adventure,Stanley Kubrick,N/A
+Le fabuleux destin d'Amélie Poulain,2001,8.3,Comedy|Romance,Jean-Pierre Jeunet,N/A
+Toy Story,1995,8.3,Adventure|Animation|Comedy|Family|Fantasy,John Lasseter,N/A
+Double Indemnity,1944,8.3,Crime|Drama|Mystery|Thriller,Billy Wilder,N/A
+Taxi Driver,1976,8.3,Crime|Drama,Martin Scorsese,N/A
+Singin' in the Rain,1952,8.3,Comedy|Musical|Romance,Stanley Donen,N/A
+Inglourious Basterds,2009,8.3,Adventure|Drama|War,Quentin Tarantino,N/A
+Full Metal Jacket,1987,8.3,Drama|War,Stanley Kubrick,N/A
+To Kill a Mockingbird,1962,8.3,Crime|Drama,Robert Mulligan,N/A
+Ladri di biciclette,1948,8.3,Drama,Vittorio De Sica,N/A
+The Kid,1921,8.3,Comedy|Drama|Family,Charles Chaplin,N/A
+The Sting,1973,8.3,Comedy|Crime|Drama,George Roy Hill,N/A
+Good Will Hunting,1997,8.3,Drama|Romance,Gus Van Sant,N/A
+Toy Story 3,2010,8.3,Adventure|Animation|Comedy|Family|Fantasy,Lee Unkrich,N/A
+Jagten,2012,8.3,Drama,Thomas Vinterberg,N/A
+Snatch,2000,8.3,Comedy|Crime,Guy Ritchie,N/A
+Scarface,1983,8.3,Crime|Drama,Brian De Palma,N/A
+Monty Python and the Holy Grail,1975,8.3,Adventure|Comedy|Fantasy,Terry Gilliam,N/A
+Per qualche dollaro in più,1965,8.3,Western,Sergio Leone,N/A
+L.A. Confidential,1997,8.3,Crime|Drama|Mystery|Thriller,Curtis Hanson,N/A
+The Apartment,1960,8.3,Comedy|Drama|Romance,Billy Wilder,N/A
+Metropolis,1927,8.3,Drama,Fritz Lang,N/A
+Jodaeiye Nader az Simin,2011,8.3,Drama,Asghar Farhadi,N/A
+Indiana Jones and the Last Crusade,1989,8.2,Action|Adventure|Fantasy,Steven Spielberg,N/A
+Rashômon,1950,8.3,Crime|Drama|Mystery,Akira Kurosawa,N/A
+Up,2009,8.3,Adventure|Animation|Comedy|Family,Pete Docter,N/A
+All About Eve,1950,8.3,Drama,Joseph L. Mankiewicz,N/A
+Batman Begins,2005,8.3,Action|Adventure|Thriller,Christopher Nolan,N/A
+Yôjinbô,1961,8.3,Action|Drama|Thriller,Akira Kurosawa,N/A
+Some Like It Hot,1959,8.2,Comedy|Romance,Billy Wilder,N/A
+Unforgiven,1992,8.2,Drama|Western,Clint Eastwood,N/A
+Der Untergang,2004,8.2,Biography|Drama|History|War,Oliver Hirschbiegel,N/A
+Die Hard,1988,8.2,Action|Thriller,John McTiernan,N/A
+The Treasure of the Sierra Madre,1948,8.2,Adventure|Drama|Western,John Huston,N/A
+Heat,1995,8.2,Crime|Drama|Thriller,Michael Mann,N/A
+Ikiru,1952,8.3,Drama,Akira Kurosawa,N/A
+Incendies,2010,8.2,Drama|Mystery|War,Denis Villeneuve,N/A
+Raging Bull,1980,8.2,Biography|Drama|Sport,Martin Scorsese,N/A
+The Great Escape,1963,8.2,Adventure|Drama|History|Thriller|War,John Sturges,N/A
+Bacheha-Ye aseman,1997,8.3,Drama|Family,Majid Majidi,N/A
+El laberinto del fauno,2006,8.2,Drama|Fantasy|War,Guillermo del Toro,N/A
+Babam ve Oglum,2005,8.4,Drama|Family,Çagan Irmak,N/A
+Chinatown,1974,8.2,Drama|Mystery|Thriller,Roman Polanski,N/A
+The Third Man,1949,8.2,Mystery|Thriller,Carol Reed,N/A
+Bohemian Rhapsody,2018,8.3,Biography|Drama|Music,Bryan Singer,N/A
+Tonari no Totoro,1988,8.2,Animation|Family|Fantasy,Hayao Miyazaki,N/A
+Hauru no ugoku shiro,2004,8.2,Adventure|Animation|Family|Fantasy,Hayao Miyazaki,N/A
+Ran,1985,8.2,Action|Drama,Akira Kurosawa,N/A
+Judgment at Nuremberg,1961,8.2,Drama|War,Stanley Kramer,N/A
+El secreto de sus ojos,2009,8.2,Drama|Mystery|Romance|Thriller,Juan José Campanella,N/A
+The Gold Rush,1925,8.2,Adventure|Comedy|Drama|Family,Charles Chaplin,N/A
+The Bridge on the River Kwai,1957,8.2,Adventure|Drama|War,David Lean,N/A
+A Beautiful Mind,2001,8.2,Biography|Drama,Ron Howard,N/A
+"Lock, Stock and Two Smoking Barrels",1998,8.2,Comedy|Crime,Guy Ritchie,N/A
+Casino,1995,8.2,Crime|Drama,Martin Scorsese,N/A
+"Three Billboards Outside Ebbing, Missouri",2017,8.2,Comedy|Crime|Drama,Martin McDonagh,N/A
+On the Waterfront,1954,8.2,Crime|Drama|Thriller,Elia Kazan,N/A
+Det sjunde inseglet,1957,8.2,Drama|Fantasy,Ingmar Bergman,N/A
+Inside Out,2015,8.2,Adventure|Animation|Comedy|Drama|Family|Fantasy,Pete Docter,N/A
+The Elephant Man,1980,8.2,Biography|Drama,David Lynch,N/A
+Room,2015,8.2,Drama|Thriller,Lenny Abrahamson,N/A
+The Wolf of Wall Street,2013,8.2,Biography|Comedy|Crime|Drama,Martin Scorsese,N/A
+Mr. Smith Goes to Washington,1939,8.2,Comedy|Drama,Frank Capra,N/A
+V for Vendetta,2005,8.2,Action|Drama|Thriller,James McTeigue,N/A
+Warrior,2011,8.2,Drama|Sport,Gavin O'Connor,N/A
+Blade Runner,1982,8.2,Thriller,Ridley Scott,N/A
+Dial M for Murder,1954,8.2,Crime|Thriller,Alfred Hitchcock,N/A
+Smultronstället,1957,8.2,Drama|Romance,Ingmar Bergman,N/A
+The General,1926,8.2,Action|Adventure|Comedy|Drama|War|Western,Clyde Bruckman,N/A
+No Country for Old Men,2007,8.1,Crime|Drama|Thriller,Ethan Coen,N/A
+Trainspotting,1996,8.2,Drama,Danny Boyle,N/A
+There Will Be Blood,2007,8.1,Drama,Paul Thomas Anderson,N/A
+The Sixth Sense,1999,8.1,Drama|Mystery|Thriller,M. Night Shyamalan,N/A
+Gone with the Wind,1939,8.2,Drama|History|Romance|War,Victor Fleming,N/A
+The Thing,1982,8.1,Horror|Mystery,John Carpenter,N/A
+Fargo,1996,8.1,Crime|Drama|Thriller,Joel Coen,N/A
+Gran Torino,2008,8.1,Drama,Clint Eastwood,N/A
+Roma ,2018,8.3,Drama,Alfonso Cuarón,N/A
+The Deer Hunter,1978,8.1,Drama|War,Michael Cimino,N/A
+Finding Nemo,2003,8.1,Adventure|Animation|Comedy|Family,Andrew Stanton,N/A
+Idi i smotri,1985,8.2,Drama|War,Elem Klimov,N/A
+The Big Lebowski,1998,8.1,Comedy|Crime,Joel Coen,N/A
+Shutter Island,2010,8.1,Mystery|Thriller,Martin Scorsese,N/A
+Sherlock Jr.,1924,8.2,Action|Comedy|Romance,Buster Keaton,N/A
+Kill Bill: Vol. 1,2003,8.1,Action|Crime|Thriller,Quentin Tarantino,N/A
+Cool Hand Luke,1967,8.1,Crime|Drama,Stuart Rosenberg,N/A
+Rebecca,1940,8.1,Drama|Mystery|Romance|Thriller,Alfred Hitchcock,N/A
+Tôkyô monogatari,1953,8.2,Drama,Yasujirô Ozu,N/A
+Mary and Max,2009,8.1,Animation|Comedy|Drama,Adam Elliot,N/A
+Hacksaw Ridge,2016,8.1,Biography|Drama|History|War,Mel Gibson,N/A
+Gone Girl,2014,8.1,Crime|Drama|Mystery|Thriller,David Fincher,N/A
+How to Train Your Dragon,2010,8.1,Action|Adventure|Animation|Comedy|Family|Fantasy,Dean DeBlois,N/A
+Sunrise: A Song of Two Humans,1927,8.2,Drama|Romance,F.W. Murnau,N/A
+Relatos salvajes,2014,8.1,Comedy|Drama|Thriller,Damián Szifron,N/A
+Jurassic Park,1993,8.1,Adventure|Thriller,Steven Spielberg,N/A
+Into the Wild,2007,8.1,Adventure|Biography|Drama,Sean Penn,N/A
+Life of Brian,1979,8.1,Comedy,Terry Jones,N/A
+In the Name of the Father,1993,8.1,Biography|Drama,Jim Sheridan,N/A
+The Truman Show,1998,8.1,Comedy|Drama,Peter Weir,N/A
+The Grand Budapest Hotel,2014,8.1,Adventure|Comedy|Drama,Wes Anderson,N/A
+Platoon,1986,8.1,Drama|War,Oliver Stone,N/A
+Stand by Me,1986,8.1,Adventure|Drama,Rob Reiner,N/A
+It Happened One Night,1934,8.1,Comedy|Romance,Frank Capra,N/A
+Eskiya ,1996,8.3,Crime|Drama|Thriller,Yavuz Turgul,N/A
+Network,1976,8.1,Drama,Sidney Lumet,N/A
+Stalker,1979,8.1,Drama,Andrei Tarkovsky,N/A
+Persona,1966,8.1,Drama|Thriller,Ingmar Bergman,N/A
+Salinui chueok,2003,8.1,Action|Crime|Drama|Mystery|Thriller,Joon-ho Bong,N/A
+Ben-Hur,1959,8.1,Adventure|Drama|History,William Wyler,N/A
+Hotel Rwanda,2004,8.1,Biography|Drama|History|War,Terry George,N/A
+12 Years a Slave,2013,8.1,Biography|Drama|History,Steve McQueen,N/A
+Million Dollar Baby,2004,8.1,Drama|Sport,Clint Eastwood,N/A
+La passion de Jeanne d'Arc,1928,8.2,Biography|Drama|History,Carl Theodor Dreyer,N/A
+Rush,2013,8.1,Action|Biography|Drama|Sport,Ron Howard,N/A
+Andrey Rublev,1966,8.2,Biography|Drama|History,Andrei Tarkovsky,N/A
+Le salaire de la peur,1953,8.1,Adventure|Drama|Thriller,Henri-Georges Clouzot,N/A
+Before Sunrise,1995,8.1,Drama|Romance,Richard Linklater,N/A
+Mad Max: Fury Road,2015,8.1,Action|Adventure|Thriller,George Miller,N/A
+Les quatre cents coups,1959,8.1,Crime|Drama,François Truffaut,N/A
+Prisoners,2013,8.1,Crime|Drama|Mystery|Thriller,Denis Villeneuve,N/A
+Hachi: A Dog's Tale,2009,8.1,Drama|Family,Lasse Hallström,N/A
+Spotlight,2015,8.1,Crime|Drama|History,Tom McCarthy,N/A
+Logan,2017,8.1,Action|Drama|Thriller,James Mangold,N/A
+Rang De Basanti,2006,8.2,Comedy|Drama,Rakeysh Omprakash Mehra,N/A
+Amores perros,2000,8.1,Drama|Thriller,Alejandro G. Iñárritu,N/A
+The Princess Bride,1987,8.1,Adventure|Family|Fantasy|Romance,Rob Reiner,N/A
+Catch Me If You Can,2002,8.1,Biography|Crime|Drama,Steven Spielberg,N/A
+Kaze no tani no Naushika,1984,8.1,Adventure|Animation|Fantasy,Hayao Miyazaki,N/A
+Harry Potter and the Deathly Hallows: Part 2,2011,8.1,Adventure|Drama|Fantasy|Mystery,David Yates,N/A
+Butch Cassidy and the Sundance Kid,1969,8.1,Biography|Crime|Drama|Western,George Roy Hill,N/A
+Rocky,1976,8.1,Drama|Sport,John G. Avildsen,N/A
+Barry Lyndon,1975,8.1,Adventure|Drama|History|War,Stanley Kubrick,N/A
+"Monsters, Inc.",2001,8.1,Adventure|Animation|Comedy|Family|Fantasy,Pete Docter,N/A
+The Grapes of Wrath,1940,8.1,Drama|History,John Ford,N/A
+The Maltese Falcon,1941,8.1,Mystery,John Huston,N/A
+Dead Poets Society,1989,8.1,Comedy|Drama,Peter Weir,N/A
+Donnie Darko,2001,8.1,Drama|Thriller,Richard Kelly,N/A
+The Terminator,1984,8.0,Action,James Cameron,N/A
+Gandhi,1982,8.1,Biography|Drama|History,Richard Attenborough,N/A
+Les diaboliques,1955,8.1,Crime|Drama|Horror|Mystery|Thriller,Henri-Georges Clouzot,N/A
+La haine,1995,8.1,Crime|Drama,Mathieu Kassovitz,N/A
+Groundhog Day,1993,8.0,Comedy|Fantasy|Romance,Harold Ramis,N/A
+The Wizard of Oz,1939,8.0,Adventure|Family|Fantasy|Musical,Victor Fleming,N/A
+Jaws,1975,8.0,Adventure|Drama|Thriller,Steven Spielberg,N/A
+Le notti di Cabiria,1957,8.1,Drama,Federico Fellini,N/A
+The Help,2011,8.1,Drama,Tate Taylor,N/A
+Faa yeung nin wa,2000,8.1,Drama|Romance,Kar-Wai Wong,N/A
+Mandariinid,2013,8.2,Drama|War,Zaza Urushadze,N/A
+Before Sunset,2004,8.1,Drama|Romance,Richard Linklater,N/A
+Paper Moon,1973,8.1,Comedy|Drama,Peter Bogdanovich,N/A
+Ah-ga-ssi,2016,8.1,Drama|Romance|Thriller,Chan-wook Park,N/A
+"Paris, Texas",1984,8.1,Drama,Wim Wenders,N/A
+The Best Years of Our Lives,1946,8.1,Drama|Romance|War,William Wyler,N/A
+Tenkû no shiro Rapyuta,1986,8.1,Adventure|Animation|Drama|Fantasy,Hayao Miyazaki,N/A
+Pirates of the Caribbean: The Curse of the Black Pearl,2003,8.0,Action|Adventure|Fantasy,Gore Verbinski,N/A
+Blade Runner 2049,2017,8.0,Drama|Mystery|Thriller,Denis Villeneuve,N/A
+La La Land,2016,8.0,Comedy|Drama|Music|Musical|Romance,Damien Chazelle,N/A
+Guardians of the Galaxy,2014,8.1,Action|Adventure|Comedy,James Gunn,N/A
+Fanny och Alexander,1982,8.1,Drama,Ingmar Bergman,N/A
+Tsubaki Sanjûrô,1962,8.1,Action|Crime|Drama|Thriller,Akira Kurosawa,N/A
+Gangs of Wasseypur,2012,8.2,Action|Comedy|Crime|Drama|Thriller,Anurag Kashyap,N/A
+Drishyam ,2015,8.3,Crime|Drama|Thriller,Nishikant Kamat,N/A
