@@ -1,10 +1,15 @@
 #define _CRT_SECURE_NO_WARNINGS
 #define MAX_LENGTH 512
 #define N_GENRES 21
+#define MIN_YEAR 1920
+#define MAX_YEAR 2025
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
+
+//STRUCTURES
 
 typedef struct {
     char title[100];
@@ -22,17 +27,28 @@ typedef struct {
     char director[100];
 }UserPref;
 
+typedef struct {
+    int index;
+    float dist;
+}MovieDistance;
+
+//FUNCTIONS
+
 int load_movies(const char* filename, Movie** movies, int* n_movies);
 
 void user_inputs(UserPref* prefs);
 
-void film_to_vector(const Movie* movie, float* vec, int vec_size,
+void movie_to_vector(const Movie* movie, float* vec, int vec_size,
     const char** genres_list, int n_genres, int min_year, int max_year,
     const char* director_pref);
 
 void user_pref_to_vector(const UserPref pref, float* vec, int vec_size,
     const char** genres_list, int n_genres, int min_year, int max_year,
     const char* director_pref);
+
+float distance(const float* v1, const float* v2, int n);
+
+int cmp(void* a, void* b);
 
 int main() {
     Movie *movies = NULL;
@@ -62,8 +78,6 @@ int main() {
     "Film-Noir"
     };
     
-    
-
 
     if (!load_movies("movies.csv", &movies, &n_movies)) {
         printf("Error while fetching movies!\n");
@@ -78,17 +92,26 @@ int main() {
     
     user_inputs(&userPrefs);
 
-    //za testiranje only - obrisati kasnije
-    float user_vec[N_GENRES + 3] = { 0 }; // žanrovi + godina + ocena + reditelj
-    user_pref_to_vector(userPrefs, user_vec, N_GENRES + 3, userPrefs.genres, N_GENRES, userPrefs.years, 2025, userPrefs.director);
+    float user_vector[N_GENRES + 3] = { 0 };
+    user_pref_to_vector(userPrefs, user_vector, N_GENRES + 3, genres_list, N_GENRES, MIN_YEAR, MAX_YEAR, userPrefs.director);
 
-    printf("User vector:\n");
-    for (int i = 0; i < N_GENRES + 3; i++) {
-        printf("%.2f ", user_vec[i]);
+    float movie_vector[N_GENRES + 3];
+    MovieDistance* m_distance = malloc(n_movies * sizeof(MovieDistance));
+    for (int i = 0; i < n_movies; i++) {
+        film_to_vector(&movies[i], movie_vector, N_GENRES + 3, genres_list, N_GENRES, MIN_YEAR, MAX_YEAR, userPrefs.director);
+        m_distance[i].index = i;
+        m_distance[i].dist = distance(user_vector, movie_vector, N_GENRES + 3);
     }
-    printf("\n");
+    
+    qsort(m_distance, n_movies, sizeof(MovieDistance), cmp);
+
+    for (int i = 1; i <= 5 && i < n_movies; i++) {
+        int index = m_distance[i].index;
+        printf("%d. %s (%d) - Rating %.1f, Genres: %s, Director: %s\n", i, movies[index].title, movies[index].year, movies[index].rating, movies[index].genre, movies[index].director);
+    }
 
     free(movies);
+    free(m_distance);
     return 1;
 }
 
@@ -166,7 +189,7 @@ void user_inputs(UserPref *prefs) {
     fgets(prefs->director, 100, stdin);
 }
 
-void film_to_vector(const Movie* movie, float* vec, int vec_size,
+void movie_to_vector(const Movie* movie, float* vec, int vec_size,
     const char** genres_list, int n_genres, int min_year, int max_year,
     const char* director_pref) {
 
@@ -211,4 +234,20 @@ void user_pref_to_vector(const UserPref pref, float* vec, int vec_size,
         vec[n_genres + 2] = 1.0;
     else
         vec[n_genres + 2] = 0.0;
+}
+
+float distance(const float* v1, const float* v2, int n) {
+    float sum = 0.0;
+
+    for (int i = 0; i < n; i++) {
+        float diff = v1[i] - v2[i];
+        sum += pow(diff, 2);
+    }
+
+    return sqrt(sum);
+}
+
+int cmp(void* a, void* b) {
+    float d = ((MovieDistance*)a)->dist - ((MovieDistance*)b)->dist;
+    return (d > 0) - (d < 0);
 }
