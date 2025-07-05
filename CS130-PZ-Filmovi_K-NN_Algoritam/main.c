@@ -34,6 +34,8 @@ typedef struct {
 
 //FUNCTIONS
 
+void strip_newline(char* str);
+
 int load_movies(const char* filename, Movie** movies, int* n_movies);
 
 void user_inputs(UserPref* prefs);
@@ -97,19 +99,32 @@ int main() {
 
     float movie_vector[N_GENRES + 3];
     MovieDistance* m_distance = malloc(n_movies * sizeof(MovieDistance));
-    for (int i = 0; i < n_movies; i++) {
-        movie_to_vector(&movies[i], movie_vector, N_GENRES + 3, genres_list, N_GENRES, MIN_YEAR, MAX_YEAR, userPrefs.director);
-        m_distance[i].index = i;
-        m_distance[i].dist = distance(user_vector, movie_vector, N_GENRES + 3);
-    }
-    
-    qsort(m_distance, n_movies, sizeof(MovieDistance), cmp);
 
-    for (int i = 0; i < 5 && i < n_movies; i++) {
+    int count = 0;
+    for (int i = 0; i < n_movies; i++) {
+        if (movies[i].rating < userPrefs.min_rating) continue;
+        movie_to_vector(&movies[i], movie_vector, N_GENRES + 3, genres_list, N_GENRES, MIN_YEAR, MAX_YEAR, userPrefs.director);
+        m_distance[count].index = i;
+        m_distance[count].dist = distance(user_vector, movie_vector, N_GENRES + 3);
+        count++;
+    }
+
+    if (count == 0) {
+        printf("No movies found matching your preferences!\n");
+        free(movies);
+        free(m_distance);
+        return 1;
+    }
+
+    
+    qsort(m_distance, count, sizeof(MovieDistance), cmp);
+
+    for (int i = 0; i < 5 && i < count; i++) {
         int index = m_distance[i].index;
         printf("%d. %s (%d) - Rating %.1f, Genres: %s, Director: %s\n", i + 1, movies[index].title, movies[index].year, movies[index].rating, movies[index].genre, movies[index].director);
     }
 
+    
     free(movies);
     free(m_distance);
     return 1;
@@ -148,7 +163,10 @@ int load_movies(const char* filename, Movie** movies, int* n_movies) {
 
         Movie m;
         char* token = strtok(line, ",");
-        if (token) strcpy(m.title, token);
+        if (token) {
+            strcpy(m.title, token);
+            strip_newline(m.title);
+        }
 
         token = strtok(NULL, ",");
         if (token) m.year = atoi(token);
@@ -157,13 +175,22 @@ int load_movies(const char* filename, Movie** movies, int* n_movies) {
         if (token) m.rating = atof(token);
 
         token = strtok(NULL, ",");
-        if (token) strcpy(m.genre, token);
+        if (token) {
+            strcpy(m.genre, token);
+            strip_newline(m.genre);
+        }
 
         token = strtok(NULL, ",");
-        if (token) strcpy(m.director, token);
+        if (token) {
+            strcpy(m.director, token);
+            strip_newline(m.director);
+        }
 
         token = strtok(NULL, "\n");
-        if (token) strcpy(m.actors, token);
+        if (token) {
+            strcpy(m.actors, token);
+            strip_newline(m.actors);
+        }
 
         (*movies)[*n_movies] = m;
         (*n_movies)++;
@@ -174,12 +201,20 @@ int load_movies(const char* filename, Movie** movies, int* n_movies) {
     return 1;
 }
 
+void strip_newline(char* str) {
+    size_t len = strlen(str);
+    if (len > 0 && str[len - 1] == '\n')
+        str[len - 1] = '\0';
+}
+
 void user_inputs(UserPref *prefs) {
     printf("Enter your favorite genres (separate multiple genres with a comma):\n> ");
     fgets(prefs->genres, 100, stdin);
+    strip_newline(prefs->genres);
 
     printf("\nEnter the desired year range (e.g., 1990-2010):\n> ");
     fgets(prefs->years, 20, stdin);
+    strip_newline(prefs->years);
 
     printf("\nEnter the minimum IMDb rating (e.g., 8.0):\n> ");
     scanf("%f", &prefs->min_rating);
@@ -187,6 +222,7 @@ void user_inputs(UserPref *prefs) {
 
     printf("\n(Optional) Enter your favorite director or actor (or leave blank):\n> ");
     fgets(prefs->director, 100, stdin);
+    strip_newline(prefs->director);
 }
 
 void movie_to_vector(const Movie* movie, float* vec, int vec_size,
@@ -241,6 +277,8 @@ float distance(const float* v1, const float* v2, int n) {
 
     for (int i = 0; i < n; i++) {
         float diff = v1[i] - v2[i];
+        if (i == n - 1)
+            diff *= 3;
         sum += pow(diff, 2);
     }
 
