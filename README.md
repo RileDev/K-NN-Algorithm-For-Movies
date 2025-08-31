@@ -123,10 +123,3 @@ Run the program and follow the prompts to enter preferences:
 > The list is ranked by similarity to your preferences. The first items are the “nearest neighbors.”
 
 ---
-
-## Notes & Future Work
-
-- Expand the dataset beyond IMDb Top‑250 for broader coverage.  
-- Experiment with alternative similarity metrics (e.g., Manhattan, Minkowski).  
-- Add weights per feature (e.g., emphasize director/actor match).  
-- Build a minimal GUI or a web front end to improve UX.
