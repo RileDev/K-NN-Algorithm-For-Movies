@@ -11,9 +11,6 @@ A small console application that recommends movies from the IMDb Top 250 using t
 - [Key Functions](#key-functions)
 - [Program Flow](#program-flow)
 - [Usage](#usage)
-- [Notes & Future Work](#notes--future-work)
-- [Course Context](#course-context)
-- [References](#references)
 
 ---
 
