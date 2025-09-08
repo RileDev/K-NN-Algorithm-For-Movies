@@ -31,7 +31,7 @@ A small console application that recommends movies from the IMDb Top 250 using t
 - a final indicator component signaling a director/actor match  
 
 **Distance metric:** Euclidean distance  
-\[ d = \sqrt{(x_1-y_1)^2 + (x_2-y_2)^2 + \dots + (x_n-y_n)^2} \]
+<img width="440" height="114" alt="image" src="https://github.com/user-attachments/assets/3fe0d716-80d8-429f-b10f-82a4f8363103" />
 
 **Top‑K** (K nearest movies with the smallest distance) form the recommendations.
 
